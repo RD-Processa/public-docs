@@ -69,4 +69,4 @@ CC-123456789|000000
 CC-987654321|111111
 ```
 
-> Archivo con dos registros para la campaña 729B0EA0. Relacionar códigos de activación (la instituación ya los envió). 
+> Archivo con dos registros para la campaña 729B0EA0. Relacionar códigos de activación (la institución ya los envió). 
