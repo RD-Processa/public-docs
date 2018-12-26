@@ -38,4 +38,4 @@ En otras palabras, nuestro cliente nos debe entregar un archivo con la relación
 
 
 ### Información relacionada
-- [Archivo formato GW-01](File-Format.md)
+- [Archivo formato GW-01](GW01-File-Format.md)
