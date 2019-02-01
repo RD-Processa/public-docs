@@ -60,6 +60,7 @@ public class MyController : HttpControllerBase
 
 
 		// Retorne el resultado de la operación.
+		// Este método se invocará tantas veces como sea necesario hasta que la respuesta sea un HttpStatusCode.OK (200).
 		// Se puede hacer de varias formas.
 		// 1) Un miembro de la enumeración HttpStatusCode.
 		// 2) Una clase que herede de Response como JsonResponse o TextResponse
