@@ -75,4 +75,4 @@ public class MyController : HttpControllerBase
 6) Inicie el servicio de Windows (MyFile.exe start)
 7) Compruebe el endpoint http enviado una solictud POST a la url http://localhost:3000/api/demo
 8) Detenga el servicio (MyFile.exe stop)
-
+9) Desinstale el servicio (MyFile.exe uninstall)
