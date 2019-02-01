@@ -1,6 +1,11 @@
 La clase `ServiceController` expone una interfaz fluent que permite establecer la configuración del servicio de Windows y de los controladores http.
 
+1) Cree un proyecto de aplicación de consola (.NET Framework).
+2) Instale el paquete Nuget `'Processa.Services.Merlin.Tracing.Core'`
+
 Ejemplo de uso:
+
+**Program.cs**
 
 ```c#
 ServiceController
@@ -11,8 +16,9 @@ ServiceController
     .Run();
 ```
 
-Para este ejemplo la clase `MyService` debe heredar de `ServiceHostBase`y `MyController` de `HttpControllerBase`.
+Para este ejemplo implmente la clase `MyService` heredando de `ServiceHostBase`y `MyController` de `HttpControllerBase`.
 
+**MyService.cs**
 ```c#
 public class MyService : ServiceHostBase
 {
@@ -31,6 +37,7 @@ public class MyService : ServiceHostBase
 }
 ```
 
+**MyController.cs**
 ```c#
 public class MyController : HttpControllerBase
 {
@@ -61,3 +68,11 @@ public class MyController : HttpControllerBase
 	}
 }
 ```
+
+3) Compile su proyecto.
+4) Abra una ventana de línea de comandos (como Administrador) en la carpeta bin del proyecto.
+5) Registre el ejecutable como un servicio de Windows (MyFile.exe install)
+6) Inicie el servicio de Windows (MyFile.exe start)
+7) Compruebe el endpoint http enviado una solictud POST a la url http://localhost:3000/api/demo
+8) Detenga el servicio (MyFile.exe stop)
+
