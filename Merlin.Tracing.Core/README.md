@@ -42,7 +42,7 @@ public class MyService : ServiceHostBase
 public class MyController : HttpControllerBase
 {
 	// LLame al constructor de la clase base con el nombre de la operación
-	// En este ejemplo para invicar la operación debería enviar un POST a http://localhost:3000/api/demo
+	// En este ejemplo para invocar la operación debería enviar un POST a http://localhost:3000/api/demo
 	public MyController() : base("demo")
 	{            
 	}
