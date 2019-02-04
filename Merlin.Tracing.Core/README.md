@@ -24,10 +24,8 @@ public class MyService : ServiceHostBase
 {
 	public MyService()
 	{
-		this.Name = "Demo"; // Nombre del servicio Windows
-		this.Account = StartupAccount.LocalService; // Cuenta con la que se debe ejecutar el servicio de Windows.
-		this.Url = new ServiceUrl("http://localhost:3000"); // Url en la que se expone el endpoint http del servicio.
-		this.Description = "Lorem Ipsum" //Opcional. Si no se establece se utiliza Name.
+		// LLame al método Initialize (para utilizar la instancia de configuración predeterminada) o a la sobrecarga que admite IAppSettings para utilizar una instancia personalizada.
+		this.Initialize();
 	}
 
 	public override string Name { get; }
