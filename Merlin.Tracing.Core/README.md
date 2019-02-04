@@ -109,3 +109,6 @@ Por ejemplo:
 ```text
 cmdkey /generic:MyName /user:myuser /pass:mypassword
 ```
+### ¿Cómo validar la firma de una solicitud (cuando aplica)?
+
+Puede utlizar el método `CompareSignature` de la clase `HttpControllerBase`. Si la firma no coincide se genera una excepción del tipo `SignatureException`
