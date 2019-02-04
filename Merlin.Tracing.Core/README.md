@@ -34,6 +34,28 @@ public class MyService : ServiceHostBase
 	public override ServiceUrl Url { get; }
 }
 ```
+La instancia predeterminada de IAppSettings busca las claves de configuración en el archivo app.config del proyecto con los siguientes nombres:
+
+| Key  | Value  |
+|:----:|--------|
+| ServiceName  | Nombre del servicio  |
+| ServiceAccount  |  Cuenta para iniciar el servicio (valores admitidos: LocalService, LocalSystem, NetworkService y CredentialManager |
+| ServiceDescription  | Descripción del servicio  |
+| ServiceUrl  | URL para publicar el servicio  |
+
+Ejemplo del archivo **app.config**
+
+```xml
+<?xml version="1.0" encoding="utf-8"?>
+<configuration>
+  <appSettings>
+    <add key="ServiceName" value="Mi servicio" />
+    <add key="ServiceAccount" value="LocalSystem" />
+    <add key="ServiceDescription" value="Lorem Ipsum" />
+    <add key="ServiceUrl" value="http://url" />
+  </appSettings>
+</configuration>
+```
 
 **MyController.cs**
 ```c#
