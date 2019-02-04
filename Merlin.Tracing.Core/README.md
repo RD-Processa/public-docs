@@ -97,3 +97,15 @@ public class MyController : HttpControllerBase
 7) Compruebe el endpoint http enviado una solictud POST a la url http://localhost:3000/api/demo
 8) Detenga el servicio (MyFile.exe stop)
 9) Desinstale el servicio (MyFile.exe uninstall)
+
+
+### ¿Cómo utilizar CredentialManager en el archivo de configuración?
+Si se establece el valor de ServiceAccount a CredentialManager, el proceso de instalación del servicio buscará una entrada en el almacén de credenciales del sistema operativo con el mismo nombre del servicio (valor en ServiceName).
+
+### ¿Cómo agregar una entrada en el almacén de credenciales del sistema operativo? 
+Puede utilizar el utilitario [cmdkey](https://docs.microsoft.com/en-us/windows-server/administration/windows-commands/cmdkey) que viene con el sistema operativo. 
+
+Por ejemplo: 
+```text
+cmdkey /generic:MyName /user:myuser /pass:mypassword
+```
