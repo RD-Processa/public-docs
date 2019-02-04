@@ -39,7 +39,7 @@ La instancia predeterminada de IAppSettings busca las claves de configuración e
 | Key  | Value  |
 |:----:|--------|
 | ServiceName  | Nombre del servicio  |
-| ServiceAccount  |  Cuenta para iniciar el servicio (valores admitidos: LocalService, LocalSystem, NetworkService y CredentialManager |
+| ServiceAccount  |  Cuenta para iniciar el servicio (valores admitidos: `LocalService`, `LocalSystem`, `NetworkService` y `CredentialManager` |
 | ServiceDescription  | Descripción del servicio  |
 | ServiceUrl  | URL para publicar el servicio  |
 
